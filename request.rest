@@ -1,0 +1,103 @@
+//Create User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Aqila Sherin",
+    "email": "ilhamloveaqila@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "user"
+}
+
+###
+//Get Data User
+GET http://localhost:5000/users
+
+###
+//Get Single User
+GET http://localhost:5000/users/8f3699ff-1e5a-472d-aa81-e5acca47e251
+
+###
+//Update User
+
+PATCH http://localhost:5000/users/ee3317ce-8e07-430e-b2ec-3aedcc5e64d9
+Content-Type: application/json
+
+{
+    "name": "Yusuf",
+    "email": "yusuf@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+
+###
+//Delete data User
+DELETE  http://localhost:5000/users/cc9054ae-f045-46cf-b1ba-5d9642361fec
+
+###
+//Login Admin
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "ilham@gmail.com",
+    "password": "123456"
+}
+
+###
+//Login User
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "yusuf@gmail.com",
+    "password": "123456"
+}
+
+###
+//Me
+
+GET  http://localhost:5000/me
+
+
+###
+//LOGOUT
+
+DELETE  http://localhost:5000/logout
+
+
+###
+//Get All Data
+GET  http://localhost:5000/data
+
+###
+//Get Single Data
+GET  http://localhost:5000/data/fbd2b476-8f18-4fd5-b481-0f375e53bd83
+
+###
+//Create Data
+POST http://localhost:5000/data
+Content-Type: application/json
+
+{
+    "name": "Jamal Mirdad",
+    "company": "PT Jakarta Kyoai"
+}
+
+###
+//Update Data
+PATCH http://localhost:5000/data/fc406dd8-1786-4053-93e5-f52bcdcfa8eb
+Content-Type: application/json
+
+{
+    "name": "Ujang Sudrajat",
+    "company": "PT Jakarta Kyoai"
+}
+
+###
+//Delete Data
+DELETE http://localhost:5000/data/d79c7921-2326-43d2-bc5f-c1385c87c76c
